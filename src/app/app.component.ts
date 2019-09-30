@@ -11,13 +11,13 @@ export class AppComponent  {
   
   success(){
     //Saved successfully show the message
-    var msg: Message ={ message: 'Saved successfully!', status: true };
+    var msg: Message ={ message: 'Saved successfully!', status: true, time: Date.now() };
     this.alert.show(msg);
   }
 
   failed(){
     //Saved failed show the error message
-    var msg: Message ={ message: 'Failed to save!', status: false }
+    var msg: Message ={ message: 'Failed to save!', status: false, time: Date.now() }
     this.alert.show(msg);
   }
 }
